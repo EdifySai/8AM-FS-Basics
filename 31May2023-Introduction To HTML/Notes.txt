@@ -1,0 +1,107 @@
+Full Stack:  A collection of  technologies that provides an e2e solution for 
+a realtime problem in the form of application / software. 
+
+FS -> Front end + back end
+
+Presentation Layer (UI) :  Front end  -  HTML, CSS,JS,React / Angular
+
+Application Layer  (Business Logic) : Backend - Java / Node / Python
+
+Database Layer (Database Operations) : Backend - MySQL / MongoDB 
+
+
+MEAN Stack: 
+
+HTML, CSS, JS, HTML5, Bootstrap, TypeScript, Angular, Node, Express, MongoDB 
+
+MERN Stack: 
+
+HTML, CSS, JS, HTML5, Bootstrap, ES6, React, Node, Express, MongoDB 
+
+Java Stack:
+
+HTML, CSS, JS, HTML5, Bootstrap, ES6, React, Java Eco System 
+
+Python Stack:
+
+HTML, CSS, JS, HTML5, Bootstrap, ES6, React, Python Eco System
+
+
+Module: 
+
+HTML5, CSS3, JS, Bootstrap
+
+
+Introduction to HTML:
+
+HTML stands for HyperText Markup Language, used to describe web pages on the browser. 
+
+Mark Up Language: It is a collection of tags that represent the content. 
+
+Tag: A tag is a keyword that is enclosed in angular brackets. 
+
+ examples:<html>, <head>, <body>, <p>......
+
+
+HTML Tags: 
+
+HTML provides plenty of tags that can be used to define / describe the content on the UI. 
+
+ex: <img>, <a>,<input>,<textarea>....
+
+Tags are not case sensitive which means we can use either upper case or lower case. however, Industry uses 
+lower case only. 
+
+
+HTML Document Structure:
+
+<html>
+
+     <head>
+     
+      </head>
+
+      <body>
+
+      </body>
+
+</html>
+
+
+Code Snippet:
+
+index.html:
+
+<html>
+
+<head>
+    <title>Digital Lync Page</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <h1>Welcome to Digital Lync Technologies</h1>
+
+</body>
+
+</html>
+
+
+q1) How does a web browser executes a html page?
+
+When a web page (index.html) is given to web browser, It creates a tree called 
+DOM (Document Object Model) tree, then the render engine uses the DOM tree and displays the content on the UI.
+
+
+
+
+
+
+
+
+
+
+
+
+
