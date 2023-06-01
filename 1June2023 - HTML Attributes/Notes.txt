@@ -1,0 +1,96 @@
+HTML Attributes:
+
+An Attribute is a key value pair that enhances the capability of a html element.
+
+
+ex:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="enter username">
+
+</body>
+
+</html>
+
+
+We can categorize attributes in 3 types. 
+
+1. element specific : If an attribute is created / can be used specifically 
+to an element, then it is known as element specific attribute.
+
+<html>
+
+<head>
+
+    <meta http-equiv="refresh" content="2">
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+From the above, meta tag has http-equiv and content as its own attributes.
+
+2. global attributes: 
+
+These attributes can be applied / used with any html element.
+
+reference list: https://www.w3schools.com/tags/ref_standardattributes.asp
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center">DigitalLync Technologies</h1>
+
+    <h2 style="text-align: center; color:grey">Hitech City Main Road, Hyderabad</h2>
+
+    <h3 style="text-align: center;color: darkgray">Telangana, India</h3>
+
+    <p style="text-align: center;font-family:cursive">You can learn trending techs at Digital Lync</p>
+
+</body>
+
+</html>
+
+3. event attributes:
+
+Any action is considered as an event and whenever an event occurs, there 
+should be an event handler to handle the event.
+
+Ref: https://www.w3schools.com/tags/ref_eventattributes.asp
+
+Problem Statement: 
+
+Disable the user in pasting the content on a text field. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input onpaste="return false" oncopy="return false" type="text" placeholder="enter account number">
+</body>
+
+</html>
+
+
+
+
+
