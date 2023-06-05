@@ -1,0 +1,231 @@
+HTML Headings: 
+
+The headings ranges from h1 to h6. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+</body>
+
+</html>
+
+
+HTML Paragraphs:
+
+tag: <p> 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p style="font-family: cursive; font-size: 30px">Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem
+        Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.</p>
+
+</body>
+
+</html>
+
+
+HTML Styles:
+
+HTML provides support to the html elements to have styling added.
+
+attributes: 
+
+style 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p style="font-family: cursive; font-size: 30px">Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem
+        Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.</p>
+
+</body>
+
+</html>
+
+
+
+HTML Comments:  
+
+<!--  
+
+
+ comment
+
+
+
+
+ -->
+
+
+ Blocks:
+
+ HTML categorizes the elements into 2 types. 
+
+ 1. Block level elements :  Any html element that starts in a new line and 
+ occupies the complete width of the page is known as block level element. 
+
+
+ 2. Inline elements :
+
+ Any html element that starts in the same line and occupies only the 
+ content level width is known as Inline element.
+
+ <html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <h1 style="background-color: grey">Hello</h1>
+
+    <span style="background-color: red">This is a span element</span>
+
+    <input type="text">
+
+    <span>This is another span!</span>
+
+    <h1>How</h1>
+
+    <a href="abc">Home</a> <a href="abc">Login</a>
+
+</body>
+
+</html>
+
+
+class:
+
+
+<html>
+
+<head>
+    <style>
+        .greyColor {
+            color: grey
+        }
+
+        .redBG {
+            background-color: red
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <h1 class="redBG">Header 1</h1>
+
+    <p>This is a paragraph!</p>
+
+    <span class="greyColor redBG">This is a span</span>
+
+</body>
+
+</html>
+
+
+
+id: If we want to identify any element uniquely, then use id attribute. 
+
+
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <input type="text" id="otp" placeholder="enter otp">
+    <button onclick="getOTP()">Submit</button>
+    <script>
+        document.getElementById("otp").value = 876667
+        function getOTP() {
+            //  console.log(document.getElementById("otp").value);
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+
+    <style>
+        #header1 {
+            font-family: cursive
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="header1"> Header 1</h1>
+    <h1 id="header1"> Header 2</h1>
+    <h1 id="header1"> Header 3</h1>
+    <h1 id="header1"> Header 4</h1>
+    <h2 id="header1"> Header 5</h2>
+
+</body>
+
+</html>
+
+
+HTML Tables:
+
+tags:
+
+<table>, <tr>, <td>, <th>
+
+
+Problem Statement: 
+
+Create a table that shows the list of students attending 8 AM class. 
+
+Sno Name course qualification offline/online 
+
+
+
+
