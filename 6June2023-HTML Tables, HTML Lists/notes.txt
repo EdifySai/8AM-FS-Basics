@@ -1,0 +1,267 @@
+Tables:
+<html>
+
+<head>
+
+    <style>
+        #header1 {
+            font-family: cursive
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightcyan
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1" width="100%" style="text-align: center">
+
+        <thead style="background-color: yellow">
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Qualification</th>
+            <th>Offline / Online</th>
+            <th colspan="3">Full Name</th>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Student One</td>
+                <td>Full Stack</td>
+                <td>Btech</td>
+                <td>Offline</td>
+                <td>Kiran</td>
+                <td>Kumar</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Student Two</td>
+                <td>Full Stack</td>
+                <td>Btech</td>
+                <td>Offline</td>
+                <td>Kiran</td>
+                <td>Kumar</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Student Three </td>
+                <td>Full Stack</td>
+                <td>Btech</td>
+                <td>Offline</td>
+                <td>Kiran</td>
+                <td>Kumar</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Student Four</td>
+                <td>Full Stack</td>
+                <td>Btech</td>
+                <td>Offline</td>
+                <td>Kiran</td>
+                <td>Kumar</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Student Five</td>
+                <td>Full Stack</td>
+                <td>Btech</td>
+                <td>Offline</td>
+                <td>Kiran</td>
+                <td>Kumar</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+</body>
+
+</html>
+
+
+HTML Lists:
+
+When we have a list of items to display on the UI, we use HTML Lists.
+
+There are 2 types of lists. 
+
+Unordered List:  <ul>
+
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <ul>
+
+        <li>Item1</li>
+
+        <ul style="list-style-type: square">
+            <li>Item 1.1</li>
+            <li>Item 1.2</li>
+            <li>Item 1.3</li>
+            <li>Item 1.4</li>
+        </ul>
+
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+
+    </ul>
+
+
+</body>
+
+</html>
+
+
+Ordered List:  <ol>
+
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <ol type="A">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+    </ol>
+
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create a quiz page using lists.
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center">Online HTML Quiz</h1>
+
+    <h2>Instructions</h2>
+    <hr>
+
+    <ol>
+        <li>Total Number of questions: 10</li>
+        <li>No negative questiosn</li>
+        <li>No Time Limit</li>
+        <li>Passing Score:5</li>
+        <li>All are MCQ questions</li>
+        <li>Do not refresh the page</li>
+        <li>Contact #00000000000 for any queries</li>
+    </ol>
+
+    <hr>
+
+    <h3>Questions</h3>
+
+    <ol>
+        <li>What is HTML?</li>
+        <input type="radio" name="q1"> Hypertext Language <br>
+        <input type="radio" name="q1"> Hypertext Mak Language<br>
+        <input type="radio" name="q1"> Hypertext Mark Language<br>
+        <input type="radio" name="q1"> Hypertext Mark up Language <br> <br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+
+        <li>What is CSS?</li>
+        <input type="radio" name="q2"> Cascading Styles <br>
+        <input type="radio" name="q2"> Cascading Styles Sheets<br>
+        <input type="radio" name="q2"> Cascading Sheets Styles <br>
+        <input type="radio" name="q2"> Cascading No Styles <br><br>
+    </ol>
+
+    <button>Submit Test</button>
+
+
+</body>
+
+</html>
+
+
+HTML Images:
+
+
