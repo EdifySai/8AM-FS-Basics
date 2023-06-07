@@ -1,0 +1,32 @@
+HTML Images:
+
+tag: <img> 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <!-- <img src="download.jpeg" width="300px" height="100px"> -->
+
+    <img src="download.jpeg" alt="This image is not available">
+
+    <img
+        src="https://rukminim1.flixcart.com/image/200/200/klcmoi80/ball/b/q/e/100-150-standard-5-club-4-na-cricket-leather-ball-labh-traders-original-imagyhzme7ezbfxr.jpeg?q=70">
+</body>
+
+</html>
+
+
+Forms:
+
+HTML provides different types of form fields to capture the information from 
+the user.
+
+tag: <form> 
+
+
+
