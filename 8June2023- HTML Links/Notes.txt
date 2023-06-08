@@ -1,0 +1,43 @@
+File Paths:
+
+There are 2 types of file paths.
+
+1. absolute path : complete path
+2. relative path : path from the current directory
+
+
+<html>
+
+<head>
+
+</head>
+<body>
+    <!-- absolute path-->
+    <span>Absolute path:</span>
+    <img src="/Users/saikumar/Desktop/8am-html/8AM-FS-Basics/8June2023/assets/images/appimages/img.png">
+
+    <br>
+    <!-- relative path - recommended-->
+    <span>Relative path:</span>
+    <img src="./assets/images/appimages/img.png">
+
+</body>
+
+</html>
+
+HTML Links:
+
+<a> is used to create a link and provide the navigation.
+
+
+
+Problem Statement: 
+
+Create a basic ecommerce application that should contain login, register, contactus, products links 
+
+
+
+
+
+
+

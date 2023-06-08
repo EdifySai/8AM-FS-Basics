@@ -1,0 +1,10 @@
+a{
+    font-size: 20px;
+    margin-left:40px;
+    text-decoration: none
+}
+
+a:hover{
+    background-color: black;
+    color:whitesmoke
+}
