@@ -1,0 +1,289 @@
+CSS Selectors:
+
+There are 2 types of selectors.
+
+1. basic 
+2. advanced
+
+Basic Selectors:
+
+1. element selector:
+
+syntax: 
+
+element{
+    property: value 
+}
+
+
+<html>
+
+<head>
+
+    <style>
+        h1,
+        h2 {
+            text-align: center
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is header 1</h1>
+    <h1>This is header 2</h1>
+    <h1>This is header 3</h1>
+    <h1>This is header 4</h1>
+    <h1>This is header 5</h1>
+
+    <h2>This is another header</h2>
+
+</body>
+
+</html>
+
+class selector:
+
+class selector should be used to provide some css irrespective of html elements.
+
+syntax:
+
+ .classname{
+     property: value
+ }
+
+ <html>
+
+<head>
+
+    <style>
+        .theme1 {
+            text-align: center;
+            color: whitesmoke;
+            background-color: grey
+        }
+
+        .theme2 {
+            text-align: right;
+            color: green;
+            background-color: yellow
+        }
+    </style>
+
+</head>
+
+<body class="theme2">
+
+    <p>This is some paragraph</p>
+
+    <h1>This is some header</h1>
+
+    <h3>This is another header</h3>
+
+</body>
+
+</html>
+
+
+
+<html>
+
+<head>
+
+    <style>
+        .greyColor {
+            color: grey
+        }
+
+        .bgColorRed {
+            background-color: red
+        }
+
+        .cursive {
+            font-family: cursive
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>This is some paragraph</p>
+
+    <h1 class="cursive bgColorRed greyColor">This is some header</h1>
+
+    <h3>This is another header</h3>
+
+</body>
+
+</html>
+
+
+
+ID Selector:
+
+#id{
+    property: value
+}
+
+
+<html>
+
+<head>
+
+    <style>
+        #header {
+            text-align: center
+        }
+
+        .colorGreen {
+            color: green
+        }
+
+        #x {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p id="header">This is some paragraph</p>
+
+    <h1 id="header">This is some header</h1>
+
+    <h3>This is another header</h3>
+
+</body>
+
+</html>
+
+Inserting CSS into HTML(Inline, Internal,External):
+
+We can categorize css in to 3 types.
+
+1. Inline : to a specific element
+2. Internal  :  to a specific file
+3. External  :  to a set of files
+
+
+Inline and Internal demo:
+
+<html>
+
+<head>
+    <!--Internal CSS-->
+    <style>
+        h2 {
+            text-align: center;
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Inline CSS-->
+    <h1 style="text-align: center">Digital Lync</h1>
+
+    <h2>This is header 2</h2>
+    <h2>This is header 3</h2>
+    <h2>This is header 4</h2>
+
+</body>
+
+</html>
+
+
+
+
+style.css:
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke
+}
+
+page1.html:
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <h1 style="color:green">Digital Lync Technologies</h1>
+
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+
+    <h2>This is Page 1</h2>
+
+</body>
+
+</html>
+
+page2.html:
+
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <h1 style="background-color: blue">Digital Lync Technologies</h1>
+
+
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+
+    <h2>This is Page 2</h2>
+
+</body>
+
+</html>
+
+
+page3.html:
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1 style="font-family: cursive">Digital Lync Technologies</h1>
+
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+
+    <h2>This is Page 3</h2>
+</body>
+
+</html>
+
+
+Colors:
