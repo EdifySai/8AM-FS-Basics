@@ -1,0 +1,217 @@
+Colors: 
+
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            /* color: teal */
+            /* color: rgb(59, 141, 134) */
+            /* color: rgba(59, 141, 134, 0.5) */
+            color: #f0f5f5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Digital Lync Technologies</h1>
+
+</body>
+
+</html>
+
+
+Background:
+
+
+<html>
+
+<head>
+    <style>
+        body {
+            /* background-image: url('download.jpeg');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed; */
+            background: top right fixed no-repeat url('download.jpeg');
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+    <h1>Some content</h1>
+
+
+
+</body>
+
+</html>
+
+
+border:
+
