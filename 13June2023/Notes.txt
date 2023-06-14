@@ -1,0 +1,19 @@
+Problem Statement: 
+
+Create a background image that occupies the height and width of 
+the page and on top of the image, create a login form and align the 
+form in the center of the page. 
+
+To the form add the border. 
+
+
+Problem Statement: 
+
+Create a web page with 5 images alinged side by side (with titles) with a specific margin
+and padding.
+
+
+https://in.bookmyshow.com/explore/home/hyderabad
+
+
+

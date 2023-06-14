@@ -1,0 +1,105 @@
+Box/Model:
+
+The Box Model is the default model that applies to every html element. 
+
+
+Box-Model is combination of border, margin,padding and content.
+
+Refer:  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
+
+
+Outline:
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border: 3px solid red;
+            outline: 10px solid green;
+            outline-offset: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <h1>Some Header here</h1>
+
+</body>
+
+</html>
+
+
+outline another code snippet:
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border: 3px solid red;
+            outline: 1px solid green;
+            /* margin-left: 400px;
+            margin-right: 700px; */
+        }
+
+        span {
+            border: 3px solid red;
+            outline: 1px solid green;
+            outline-offset: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 style="display: inline">Some Header here</h1>
+    </center>
+
+    <span>Hello</span>
+
+</body>
+
+</html>
+
+
+
+Fonts:
+
+
+https://www.w3schools.com/css/css_font.asp
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <!-- <style>
+        h1 {
+            font-size: 100px;
+            font-family: cursive
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <h1 style="font-family: Audiowide, sans-serif">Some Header here</h1>
+
+
+</body>
+
+</html>
+
+
+Links:
+
+
+
