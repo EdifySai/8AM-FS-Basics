@@ -1,0 +1,346 @@
+Styling Lists:
+
+<html>
+
+<head>
+    <style>
+        li {
+            list-style-image: url('download.png');
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+
+</body>
+
+</html>
+
+
+<style>
+ div h1{
+     color:green;
+ }
+ </style>
+
+
+
+ <div>
+
+  <h1> Hello </h1>
+
+  </div>
+
+
+   <h1>  Hey  </h1>
+
+
+
+Tables:
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #otherCustomers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>A Fancy Table</h1>
+
+    <table id="customers">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+        <tr>
+            <td>North/South</td>
+            <td>Simon Crowther</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Paris spécialités</td>
+            <td>Marie Bertrand</td>
+            <td>France</td>
+        </tr>
+    </table>
+
+    <table id="otherCustomers">
+
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+        <tr>
+            <td>North/South</td>
+            <td>Simon Crowther</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Paris spécialités</td>
+            <td>Marie Bertrand</td>
+            <td>France</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
+
+
+
+CSS Combinators:
+
+There are four different combinators in CSS:
+
+descendant selector (space): 
+
+<html>
+
+<head>
+
+    <style>
+        div h1 {
+            text-align: center
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>This is a header 1</h1>
+    </div>
+    <h1>This header 2 </h1>
+    <h1>This is header 3</h1>
+</body>
+
+</html>
+
+
+child selector (>):
+
+<html>
+
+<head>
+
+    <style>
+        div>h1 {
+            text-align: center;
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>This is a header 1</h1>
+
+        <section>
+            <h1>This is another header</h1>
+        </section>
+
+    </div>
+    <h1>This header 2 </h1>
+</body>
+
+</html>
+
+adjacent sibling selector (+):
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div > p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Child Selector</h2>
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
+
+</body>
+</html>
+
+
+
+general sibling selector (~):
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div ~ p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>General Sibling Selector</h2>
+
+<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+
+</body>
+</html>
+
+
+
