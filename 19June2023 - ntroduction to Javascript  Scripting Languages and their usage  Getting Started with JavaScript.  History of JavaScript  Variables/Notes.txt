@@ -1,0 +1,102 @@
+Javascript:
+
+Introduction to Javascript:
+
+JS is used to provide dynamic nature to the web pages. JS is used to developed dynamic web pages. 
+
+JS was initially developed for implementation of client side applications, later JS is everywhere , We 
+can write server side applications using JS also.
+
+Application areas where JS is used: 
+
+1. Client side Apps ( Front end application development)
+2. Server side Apps ( Backend App Development)
+3. IOT (Internet of Things)
+4. Block Chain 
+5. Games 
+6.Browser Extensions 
+7. Automation Testing 
+
+JS was developed by Brendan while working with Netscape Navigator browser.
+
+initially The language was named as LiveScript later changed to Javascript.
+
+Scripting Language: Any language that is not compiled but interpreted directly is known as Scripting language. 
+
+Variables:
+
+A Variable is an identifier, which identifies some data and store them. 
+
+syntax: 
+
+var var_name = value; 
+
+var username ="msdckbsc"; 
+
+var password  = "jscksdkksdc"; 
+
+var age= 21; 
+
+var gender = "male"; 
+
+
+ <script>
+        var username = "kiran";
+        console.log(username);
+        var age = 21;
+        console.log(age);
+    </script>
+
+
+Problem Statement: 
+
+Implement a login system with some dummy username/ passwords.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input id="username" type="text" placeholder="username here"> <br><br>
+    <input id="password" type="password" placeholder="password here"><br><br>
+    <button onclick="authenticateUser()">Login</button>
+    <script>
+        function authenticateUser() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            console.log(username);
+            console.log(password);
+
+            if (username == "digital" && password == "lync") {
+                alert("login success");
+            }
+            else {
+                alert("login failure");
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+Types of Variables: 
+
+There are 2 types variables in JS. 
+
+1. Local Variables 
+2. Global Variables 
+
+
+
+
+
+
+
+
+
+
+
+
+
