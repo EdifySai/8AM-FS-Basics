@@ -100,3 +100,5 @@ There are 2 types variables in JS.
 
 
 
+
+

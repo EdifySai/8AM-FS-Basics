@@ -1,0 +1,101 @@
+Types of Variables: 
+
+There are 2 types variables in JS. 
+
+1. Local Variables : 
+
+Any variable that is created inside a function is known as 
+local variable. 
+
+Local variables can be accessed with in the function only. They are 
+called as local variables just because, these variables are specific 
+to that function and can be visible only with in that function.
+
+ function f1() {
+            var a = 10; // LC
+            var b = 20; // LC
+            var c = 30; // LC
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        f1();
+
+2. Global Variables:
+
+Any variable created outside of a function is known as Global variable.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = 100; //  GV
+        var b = 200; //  GV
+        console.log(a);
+        function f1() {
+            console.log(a); // 100
+            a = 900;
+        }
+        function f2() {
+            console.log(b); // 200
+        }
+        f1();
+        f2();
+        console.log(a); // 900
+    </script>
+
+</body>
+
+</html>
+
+
+
+Problem Statement: 
+
+Implement a like feature where each time the like icon is clicked, the 
+count should be incremented. 
+
+
+Algorithm: 
+
+Step 1: Get the like icon (done) 
+
+Step 2: Make the like icon clickable  (done)
+
+Step 3: take a variable, each time the icon is clicked, increment the 
+value of the variable 
+
+Step 4:  display the updated value on the UI every time the user clicks on 
+the icon.
+
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <i onclick="incrementlike()" class="fa fa-thumbs-up" style=font-size:100px></i>
+    <h1 id="counter" style="display: inline">0</h1>
+
+    <script>
+
+        var likes = 0;
+        function incrementlike() {
+
+            likes = likes + 1;
+            document.getElementById("counter").innerHTML = likes;
+        }
+    </script>
+</body>
+</html>
+
+
+

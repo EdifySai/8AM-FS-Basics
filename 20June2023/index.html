@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <i onclick="incrementlike()" class="fa fa-thumbs-up" style=font-size:100px></i>
+    <h1 id="counter" style="display: inline">0</h1>
+
+    <script>
+
+        var likes = 0;
+        function incrementlike() {
+
+            likes = likes + 1;
+            document.getElementById("counter").innerHTML = likes;
+        }
+
+    </script>
+
+</body>
+
+</html>
