@@ -1,0 +1,172 @@
+Variable Hoisting: 
+
+It is a default process that happens in javascript before the execution 
+of the code. 
+
+Variable Hoisting is the process where all the local variables, global 
+variables are declared at the top before the execution of the code. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = 10; // GV
+        function f1() {
+            console.log(a); // ?
+            var a = 900; // LV
+        }
+        f1();
+
+        /*
+
+          After variable hoisting
+
+             var a; // undefined
+             a=10;
+             function f1(){
+                   var a; // undefined
+                   console.log(a); // undefined
+                   a=900;
+             }
+
+             f1();
+
+
+
+        */
+    </script>
+
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        console.log(a); //U
+        console.log(b); //U
+        var a = 100;
+        var b = 200;
+        function f1() {
+            console.log(a); // u
+            console.log(b); // u
+            var a = 200;
+            var b = 300;
+            console.log(a); // 200
+        }
+        f1();
+        console.log(a); // 100
+        console.log(b); // 200
+    </script>
+</body>
+</html>
+
+
+
+Data Types:
+
+
+A datatype represents the type of data stored in a variable. Based on 
+data type, the memory manager allocates the memory for the data. 
+
+
+syntax: 
+
+      var var_name =value 
+
+      The datatype of a variable is decided based on the value that is stored. 
+
+
+In JS, we have 2 types of datatypes, 
+
+1. Primitive Types :
+
+    number, boolean, string
+
+
+    number:  number type is considered for any type of number in JS. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = 100;
+        console.log(typeof a);
+        var rating = 4.14;
+        console.log(typeof rating);
+        function checkEligibility(age) {
+            if (typeof age == "number") {
+                if (age >= 18) {
+                    console.log("eligible for vote");
+                }
+                else {
+                    console.log("not eligible for vote")
+                }
+            }
+            else {
+                console.log("invalid data input, please enter a number");
+            }
+        }
+        checkEligibility(true);
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+boolean: 
+
+true or false
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function f1(isDone) {
+            if (typeof isDone == "boolean") {
+                if (isDone == false) {
+                    console.log("Work is not done yet");
+                }
+                else {
+                    console.log("work is done")
+                }
+            }
+            else {
+                console.log("invalid input");
+            }
+        }
+        f1("true");
+    </script>
+
+</body>
+</html>
+
+2. Non Primitive Types
+
+      arrays,objects
+
+
+     
+
