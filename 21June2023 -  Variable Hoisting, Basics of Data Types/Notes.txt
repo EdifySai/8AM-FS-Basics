@@ -168,5 +168,56 @@ true or false
       arrays,objects
 
 
+Arrays:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" size=40 id="email" placeholder="enter emailid">
+
+    <button onclick="next()">Next</button>
+
+    <script>
+
+        var users = ["kiran", "rajesh", "nikhil"];
+        console.log(users);
+        // console.log(users[0]);
+        // console.log(users[1]);
+        // console.log(users[2]);
+        // console.log(users[3]);
+        // users[100] = 900;
+        // console.log(users);
+    </script>
+</body>
+
+</html>
+
+
+JS Objects:  An object is a programmatic representation of a realtime object. 
+
+syntax: 
+
+var obj = {
+     key: value, 
+     .
+     .
+
+}
+
+keys must be unqiue and expected to be Strings. 
+
+Values need not to be unique, can be of any datatype.
+
+
+
+
+
+
+
      
 

@@ -1,0 +1,83 @@
+String: 
+
+String is a set of characters.
+
+var str = " ";
+or 
+var str = ' ';
+
+
+code:
+
+ var str = "hello";
+
+        console.log(typeof str);
+
+        var firstname = "digital";
+        var lastname = "lync";
+        firstname.concat(lastname);
+        console.log(firstname);
+
+
+In JS, Strings are immutable, which means once a String is created , 
+we cannot modify it. However, if we want a latest value to be updated to 
+a string, then we can re-assign.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" size=40 id="email" placeholder="enter emailid">
+
+    <button onclick="next()">Next</button>
+
+    <script>
+
+        function next() {
+            var email = document.getElementById("email").value;
+            email = email.trim();
+            email = email.toLowerCase();
+            if (email.includes('@gmail.com')) {
+
+            }
+            else {
+                email = email + '@gmail.com';
+            }
+            document.getElementById("email").value = email;
+        }
+    </script>
+</body>
+
+</html>
+
+Non-Primitive Datatypes: 
+
+Arrays and Objects
+
+Array: 
+
+An Array is a linear data structure which stores the data in a  
+sequential order. 
+
+in JS, Arrays can store different types of elements. 
+
+JS allows the arrays to be dynamic, which means, the array size automtically 
+gets increased based on the elements. 
+
+syntax: 
+
+var array_name = [];
+
+var users= ["kiran", "rajesh","nikhil"];
+
+
+
+
+
+
+
