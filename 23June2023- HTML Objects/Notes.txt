@@ -1,0 +1,119 @@
+Objects:
+
+An Object is a representation of a realtime entity. 
+
+syntax: 
+
+var obj = {
+    key : value,
+    .
+    .
+    .
+    .
+}
+
+key -> string, unique 
+
+value-> any type, need not to be unique
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+
+        var employee = {
+            name: "Kiran",
+            address: {
+                city: "Hyderabad",
+                state: "Telangana",
+                country: "India"
+            },
+            technologies: ["java", "dotnet", "mean stack", "mern stack"],
+            projects: [
+                {
+                    name: "CRM",
+                    client: "TCS"
+                },
+                {
+                    name: "LMS",
+                    client: "TCS"
+                },
+                {
+                    name: "Vehicle Tracking System",
+                    client: "TCS"
+                }
+            ],
+            age: 27
+        }
+        console.log(employee.name);
+        console.log(employee.technologies);
+        console.log(employee.address.country)
+        console.log(employee.projects[0].name);
+        console.log(employee.eid);
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var product = {
+            name: "vivo T1 44W (Ice Dawn, 128 GB)  (8 GB RAM)",
+            rating: {
+                rate: 4.3,
+                ratings: 7011,
+                reviews: 545
+            },
+            delivery: {
+                pincode: 889999,
+                deliveryBy: "26 Jun, Monday",
+                isPaid: false,
+                orderBefore: "10:25 AM"
+            },
+            specifications: {
+                general: {
+                    "In The Box": "Handset, Type-C to USB Cable, USB Power Adapter, Sim Eject Tool, Protective Case, Protective Film (Applied), Documentation",
+                    "Model Number": "V2153 | V2168",
+                    "Model Name": "T1 44W"
+                },
+                "Display Features": {
+                    "Display Size": "16.36 cm (6.44 inch)",
+                    "Resolution": "2400 x 1080 Pixel"
+                }
+            }
+        }
+
+        console.log(product.delivery.pincode);
+        console.log(product.specifications.general["In The Box"]);
+        console.log(product.specifications["Display Features"].Resolution);
+        console.log(product.specifications["Display Features"]["Display Size"]);
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+

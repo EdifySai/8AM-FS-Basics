@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+</head>
+<body>
+    <script>
+        var product = {
+            name: "vivo T1 44W (Ice Dawn, 128 GB)  (8 GB RAM)",
+            rating: {
+                rate: 4.3,
+                ratings: 7011,
+                reviews: 545
+            }
+        }
+        var keys = Object.keys(product.rating);
+        console.log(keys);
+
+        for (var i = 0; i < keys.length; i++) {
+            if (keys[i] != "ratings")
+                console.log(keys[i] + "  " + product.rating[keys[i]]);
+        }
+
+    </script>
+
+</body>
+
+</html>
