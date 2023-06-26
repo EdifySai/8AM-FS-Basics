@@ -1,0 +1,131 @@
+Operators:
+
+An Operator is a special symbol / keyword that provides some functionality.
+
+example: 
+
+ 10 + 20 => 30
+
+"hello" + "world" => hello world 
+
+var a=100; 
+
+console.log(typeof a); // number
+
+
+Arithmetic Operators: 
+
++,-,*,/, %, ++,--
+
+ var a = 100;
+        a++; // 101
+        --a; // 100
+        ++a; // 101 
+        a++; // 102 
+        console.log(a); // 102 / 101 / 
+<html>
+<head>
+</head>
+
+<body>
+    <script>
+        var a = 100;
+        console.log(a++); //  100
+        console.log(++a); // 102
+        console.log(a--); //102
+        console.log(--a); //100
+        console.log(a++); //100
+        console.log(a); //101
+    </script>
+</body>
+
+</html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var a = 100, b = 200, c = "100";
+
+        console.log(a + c + b); // 100100200 
+
+        console.log(a + b + c);
+
+        console.log(c + (a + b));
+    </script>
+</body>
+
+</html>
+
+Ref: Operators Preecdence https://www.w3schools.com/js/js_precedence.asp
+
+
+Comparision Operators:
+
+>,<.<=,>=,==, ===, !=, ?:
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+        // >,<.<=,>=,==, ===, !=, ?:
+
+        var a = 1000, b = 2200, c = "100", d = "msbcmbd";
+
+        console.log(a > b);
+
+        console.log(a < b);
+
+        console.log(a > c);
+
+        console.log(a > d);
+
+        console.log(a == c); // content only , does not compare the datatype
+
+        console.log(a === c); // compares content and datatype 
+
+        console.log(a != c); // 100 != "100" // only the content checked  => 100 != "100"  (false)
+
+        console.log(a !== c); // 100 !== "100" // both content and type checked => 100 !== "100"  (true)
+
+
+        // ? : 
+
+        a > b ? console.log("a > b") : console.log("a < b ");
+
+        // test-condition ?  true releated code:  false related code
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create username, password fields, once the user submit the form, capture the data and compare the data with 
+dummy values, based on the result, display on the console. 
+
+ 
+ var uname=",nckdb";
+ var upass = "s,bvjsdvbvkjb";
+
+ var username = document.getElementById("username").value; 
+ var password = document.getElementById("password").value; 
+
+ uname ==  username && upass == password ? console.log("login success"): console.log("login failure");
+
+
+
