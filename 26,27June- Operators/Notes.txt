@@ -1,0 +1,292 @@
+Operators:
+
+An Operator is a special symbol / keyword that provides some functionality.
+
+example: 
+
+ 10 + 20 => 30
+
+"hello" + "world" => hello world 
+
+var a=100; 
+
+console.log(typeof a); // number
+
+
+Arithmetic Operators: 
+
++,-,*,/, %, ++,--
+
+ var a = 100;
+        a++; // 101
+        --a; // 100
+        ++a; // 101 
+        a++; // 102 
+        console.log(a); // 102 / 101 / 
+<html>
+<head>
+</head>
+
+<body>
+    <script>
+        var a = 100;
+        console.log(a++); //  100
+        console.log(++a); // 102
+        console.log(a--); //102
+        console.log(--a); //100
+        console.log(a++); //100
+        console.log(a); //101
+    </script>
+</body>
+
+</html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var a = 100, b = 200, c = "100";
+
+        console.log(a + c + b); // 100100200 
+
+        console.log(a + b + c);
+
+        console.log(c + (a + b));
+    </script>
+</body>
+
+</html>
+
+Ref: Operators Preecdence https://www.w3schools.com/js/js_precedence.asp
+
+
+Comparision Operators:
+
+>,<.<=,>=,==, ===, !=, ?:
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+        // >,<.<=,>=,==, ===, !=, ?:
+
+        var a = 1000, b = 2200, c = "100", d = "msbcmbd";
+
+        console.log(a > b);
+
+        console.log(a < b);
+
+        console.log(a > c);
+
+        console.log(a > d);
+
+        console.log(a == c); // content only , does not compare the datatype
+
+        console.log(a === c); // compares content and datatype 
+
+        console.log(a != c); // 100 != "100" // only the content checked  => 100 != "100"  (false)
+
+        console.log(a !== c); // 100 !== "100" // both content and type checked => 100 !== "100"  (true)
+
+
+        // ? : 
+
+        a > b ? console.log("a > b") : console.log("a < b ");
+
+        // test-condition ?  true releated code:  false related code
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create username, password fields, once the user submit the form, capture the data and compare the data with 
+dummy values, based on the result, display on the console. 
+
+ 
+ var uname=",nckdb";
+ var upass = "s,bvjsdvbvkjb";
+
+ var username = document.getElementById("username").value; 
+ var password = document.getElementById("password").value; 
+
+ uname ==  username && upass == password ? console.log("login success"): console.log("login failure");
+
+Logical Operators:
+
+Logical AND (&&), OR (||) and NOT (!) 
+
+ var username = "kiran", password = "kiran", email = "kiran@gmail.com";
+
+        console.log(username == "kiran1" && password == "kiran1");
+
+        console.log(email == "kiran123@gmail.com" || username == "kiran1");
+
+        console.log(!true);
+
+
+
+
+
+<html>
+
+<head>
+</head>
+<input placeholder="email / phonenumber" type="text" id="userId">
+<input placeholder="password here" type="password" id="password">
+<button onclick="login()">Login</button>
+
+<body>
+    <script>
+        function login() {
+            var email = "sai@gmail.com";
+            var upass = "sai";
+            var mobile = 9010101010;
+            var userId = document.getElementById("userId").value;
+            var password = document.getElementById("password").value;
+            console.log("userId", userId);
+            console.log("password", password);
+            (userId == email || userId == mobile) && password == upass ? alert("login success") : alert("login failure");
+        }
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement:   Task
+
+Implement a toggle between the icons. 
+
+
+typeof operator:
+
+ var mobile = "9010101010";
+
+ console.log(typeof mobile);
+
+
+ instanceof operator:
+
+function Employee(name, eid, project) {
+            this.name = name;
+            this.eid = eid;
+            this.project = project
+        }
+
+        var employee1 = new Employee("kiran", 101, "crm");
+
+        var employee2 = { x: 1, y: 2 };
+
+        console.log(employee1 instanceof Employee);
+        console.log(employee2 instanceof Employee);
+
+
+// Digital Logic Design :  conversions -> binary to decimal, decimal to hexadecimal, 
+
+Assignment Operators:
+
+        var a = 100; // assignment operator 
+        a = a + 10;
+        console.log(a); // 110
+        a += 20; // a= a+20
+        console.log(a); // 
+        a -= 20;
+        console.log(a);
+        a *= 20;
+        console.log(a);
+
+
+control statements: 
+
+sequential : if, if-else, switch
+
+
+if:
+
+syntax: 
+
+if(test-condition){
+
+}
+
+ var age = 18;
+
+        if (age >= 18) {
+            console.log("eligible")
+        }
+
+if-else:
+
+if(test-condition){
+
+
+}
+
+else{
+
+
+}
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        var age = 17;
+
+        if (age >= 18) {
+            console.log("eligible")
+        }
+        else {
+            console.log("not eligible");
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+iterative : while, do-while and for
+jump: return, break, continue
+
+
+
+
