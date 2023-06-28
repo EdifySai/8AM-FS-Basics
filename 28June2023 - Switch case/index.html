@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <select onchange="displayContent()" id="lang">
+
+        <option>Select your Language</option>
+        <option value="hindi">Hindi</option>
+        <option value="tamil">Tamil</option>
+        <option value="telugu">Telugu</option>
+        <option value="malayalam">Malayalam</option>
+        <option value="kannada">Kannada</option>
+
+    </select>
+
+    <div id="msg">
+
+    </div>
+
+    <script>
+        function displayContent() {
+            var msg = document.getElementById("msg");
+            var lang = document.getElementById("lang").value;
+            switch (lang) {
+                case "hindi": msg.innerHTML = "<h1>आप कैसे हैं </h1>"; break;
+                case "tamil": msg.innerHTML = "<h1>எப்படி இருக்கிறீர்கள் </h1>"; break;
+                case "telugu": msg.innerHTML = "<h1>నువ్వు ఎలా ఉన్నావు </h1>"; break;
+                case "malayalam": msg.innerHTML = " <h1>എങ്ങിനെ ഇരിക്കുന്നു </h1>"; break;
+                case "kannada": msg.innerHTML = " <h1>ಹೇಗಿದ್ದೀಯಾ </h1>"; break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

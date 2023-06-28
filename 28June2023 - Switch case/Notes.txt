@@ -1,0 +1,156 @@
+switch case: 
+
+switch(choice){
+
+case value1 :  // code; 
+case value2:  // code; 
+.
+.
+.
+
+case valuen : // code
+
+default :  // code
+
+}
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var choice = "mearn";
+        switch (choice) {
+            case "java": console.log("90 hours"); break;
+            case "mean": console.log("60 hours"); break;
+            case "mern": console.log("65 hours"); break;
+            default: console.log("course n/a");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create a drop down list, based on the selection of the city, 
+display the test centers for driving license. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <select onchange="displayTestCenters()" id="city">
+
+        <option>Select your city</option>
+        <option value="hyd">Hyderabad</option>
+        <option value="rgr">Rangareddy</option>
+        <option value="sid">Siddipet</option>
+        <option value="wgl">Warangal</option>
+        <option value="scd">Secunderabad</option>
+
+    </select>
+
+    <div id="testCenters">
+
+    </div>
+
+    <script>
+
+        displayTestCenters();
+        function displayTestCenters() {
+
+            var testCenters = document.getElementById("testCenters");
+
+            var city = document.getElementById("city").value;
+
+            switch (city) {
+
+                case "hyd": testCenters.innerHTML = "<h1>Nagole</h1> <h1> Uppal </h1>"; break;
+                case "rgr": testCenters.innerHTML = "<h1>Patancheru</h1> <h1> Manikonda</h1>"; break;
+                case "sid": testCenters.innerHTML = "<h1>Old Bustand</h1> <h1> New Bustand </h1>"; break;
+                case "wgl": testCenters.innerHTML = "<h1>Vasavi Nagar</h1> <h1>  Maruthi Nagar </h1>"; break;
+                case "scd": testCenters.innerHTML = "<h1>Maredpally</h1> <h1> Bowenpally</h1>"; break;
+                default: testCenters.innerHTML = "<h1>please select a city</h1>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create a drop down list, based on the selection of the city, 
+display the test centers in another drop down list. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <select onchange="displayTestCenters()" id="city">
+
+        <option>Select your city</option>
+        <option value="hyd">Hyderabad</option>
+        <option value="rgr">Rangareddy</option>
+        <option value="sid">Siddipet</option>
+        <option value="wgl">Warangal</option>
+        <option value="scd">Secunderabad</option>
+
+    </select>
+
+    <div id="msg">
+
+    </div>
+
+
+    <select id="selectedCity">
+
+    </select>
+
+    <script>
+
+        displayTestCenters();
+        function displayTestCenters() {
+            var msg = document.getElementById("msg");
+            var city = document.getElementById("city").value;
+            var selectedCity = document.getElementById("selectedCity");
+            switch (city) {
+                case "hyd": selectedCity.innerHTML = "<option>Nagole</> <option> Uppal </option>"; break;
+                case "rgr": selectedCity.innerHTML = "<option>Patancheru</option> <option> Manikonda</option>"; break;
+                case "sid": selectedCity.innerHTML = "<option>Old Bustand</option> <option> New Bustand </option>"; break;
+                case "wgl": selectedCity.innerHTML = "<option>Vasavi Nagar</option> <option>  Maruthi Nagar </option>"; break;
+                case "scd": selectedCity.innerHTML = "<option>Maredpally</option> <option> Bowenpally</option>"; break;
+                default: msg.innerHTML = "<h1>please select a city</h1>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+Problem Statment: 
+
+
