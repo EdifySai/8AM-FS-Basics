@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input id="name" type="text" placeholder="enter product name"> <br><br>
+    <input id="price" type="number" placeholder="enter product price"> <br><br>
+    <input id="desc" type="text" placeholder="enter product desc"> <br><br>
+    <input id="url" type="text" placeholder="enter product url"> <br><br>
+
+    <button onclick="addProduct()">Add Product</button>
+
+    <ul id="prods">
+
+    </ul>
+
+    <script>
+        var products = [];
+        function addProduct() {
+            var name = document.getElementById("name").value;
+            var price = document.getElementById("price").value;
+            var desc = document.getElementById("desc").value;
+            var url = document.getElementById("url").value;
+
+            var product = {
+                name: name,
+                price: price,
+                desc: desc,
+                url: url
+            }
+            products.push(product);
+            console.log(products);
+            displayProducts();
+        }
+
+        function displayProducts() {
+            var index = 0;
+            var listItems = "";
+            while (index < products.length) {
+                listItems = listItems + "<li>" + products[index].name + "</li>";
+                index++;
+            }
+            document.getElementById("prods").innerHTML = listItems;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

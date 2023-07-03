@@ -1,0 +1,98 @@
+Iterative Statements:
+
+If we want to execute a block of code multiple times, then we can use Iterative Statements. 
+
+ex: list of products, list of users..
+
+while: 
+
+syntax: 
+
+while(test-condition){
+    // code
+}
+
+test-condition:  results in boolean value
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var index = 0;
+
+        while (index < 10) {
+            console.log(index);
+            index++;
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+code snippet:
+
+var users = ["kiran", "rajesh", "nikhil", "anil", "venkat"];
+
+        var index = 0;
+
+        while (index < users.length) {
+            console.log(users[index]);
+            index++;
+        }
+
+
+Problem Statement: 
+
+Display the list of comments on the UI. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <ol id="commentsList">
+
+    </ol>
+
+    <script>
+        var comments = ["This product is good", "This products looks ok", "Dont buy this", "The quality is not up to the mark",];
+        var index = 0;
+        var listItems = "";
+        while (index < comments.length) {
+            listItems = listItems + "<li>" + comments[index] + "</li>";
+            index++;
+        }
+        // // var commentsList = document.getElementById("commentsList");
+        // // commentsList.innerHTML = listItems;
+        document.getElementById("commentsList").innerHTML = listItems;
+    </script>
+
+</body>
+
+</html>
+
+Problem Statement: 
+
+Implement a product management system using while loop. 
+1. add product 
+2. update product 
+3.delete 
+4. list all the products 
+
+
+
