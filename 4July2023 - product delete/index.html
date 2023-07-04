@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input id="name" type="text" placeholder="enter product name"> <br><br>
+    <input id="price" type="number" placeholder="enter product price"> <br><br>
+    <input id="desc" type="text" placeholder="enter product desc"> <br><br>
+    <input id="url" type="text" placeholder="enter product url"> <br><br>
+
+    <button onclick="addProduct()">Add Product</button>
+
+    <ul id="prods">
+
+    </ul>
+
+    <script>
+        var products = [];
+        var uniqueId = 0;
+        function addProduct() {
+            var name = document.getElementById("name").value;
+            var price = document.getElementById("price").value;
+            var desc = document.getElementById("desc").value;
+            var url = document.getElementById("url").value;
+
+            var product = {
+                name: name,
+                price: price,
+                desc: desc,
+                url: url,
+                productId: generateUniqueId()
+            }
+            products.push(product);
+            console.log(products);
+            displayProducts();
+        }
+
+        function generateUniqueId() {
+            uniqueId++;
+            return uniqueId;
+        }
+
+        // standard functionality
+        // function deleteProduct(productId) {
+
+        //     var index = 0;
+
+        //     while (index < products.length) {
+        //         if (products[index].productId == productId) {
+        //             products.splice(index, 1);
+        //             break;
+        //         }
+        //         index++;
+        //     }
+        //     document.getElementById(productId).remove();
+        //     // displayProducts();
+        // }
+
+        // alternative approach
+        function deleteProduct(product) {
+            console.log("product", product);
+            var index = products.indexOf(product);
+            products.splice(index, 1);
+            document.getElementById(product.productId).remove();
+        }
+        function displayProducts() {
+            var index = 0;
+            var listItems = "";
+            while (index < products.length) {
+                //  listItems = listItems + "<li id=" + products[index].productId + ">" + products[index].productId + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + products[index].name + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + products[index].price + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + "<img width='40px' height='40px' src=" + products[index].url + ">" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + "<button style='background-color:red' onclick='deleteProduct(" + products[index].productId + ")'>Delete</button>" + "</li>";
+                listItems = listItems + "<li id=" + products[index].productId + ">" + products[index].productId + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + products[index].name + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + products[index].price + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + "<img width='40px' height='40px' src=" + products[index].url + ">" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + "<button style='background-color:red' onclick='deleteProduct(" + JSON.stringify(products[index]) + ")'>Delete</button>" + "</li>";
+                index++;
+            }
+            document.getElementById("prods").innerHTML = listItems;
+        }
+
+    </script>
+
+</body>
+
+</html>
