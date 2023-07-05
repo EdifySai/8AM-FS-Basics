@@ -13,6 +13,8 @@
 
     <button id="addOrSave" onclick="addProduct()">Add Product</button>
 
+    <h1 style="color:red" id="msg"></h1>
+
     <ul id="prods">
 
     </ul>
@@ -21,16 +23,29 @@
         var products = [];
         var uniqueId = 0;
         function addProduct() {
+            var msg = document.getElementById("msg");
             var name = document.getElementById("name").value;
 
             if (name.length == 0) {
-                alert("name cannot be empty");
+                msg.innerHTML = "name cannot be empty";
                 return;
             }
 
             var price = document.getElementById("price").value;
+            if (price.length == 0) {
+                msg.innerHTML = "price cannot be empty";
+                return;
+            }
             var desc = document.getElementById("desc").value;
+            if (desc.length == 0) {
+                msg.innerHTML = "desc cannot be empty";
+                return;
+            }
             var url = document.getElementById("url").value;
+            if (url.length == 0) {
+                msg.innerHTML = "url cannot be empty";
+                return;
+            }
 
             var product = {
                 name: name,
