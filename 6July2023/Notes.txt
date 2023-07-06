@@ -1,0 +1,164 @@
+do-while: 
+
+syntax: 
+
+do{
+
+// code
+
+}while(test-condition);
+
+
+  var index = 12;
+        do {
+            console.log(index);
+            index++;
+        } while (index < 10)
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var users = [];
+        var index = 0;
+        do {
+            if (users.length == 0) {
+                users = getDataFromDatabase();
+            }
+            else {
+                console.log(users[index].userId + "\t" + users[index].name);
+                index++;
+            }
+        } while (index < users.length)
+
+        function getDataFromDatabase() {
+
+            return [
+                {
+                    userId: 101,
+                    name: "kiran"
+                },
+                {
+                    userId: 102,
+                    name: "rajesh"
+                },
+                {
+                    userId: 103,
+                    name: "ankit"
+                }
+            ]
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+for-loop: it is an enhanced while loop with compact syntax. 
+syntax: 
+
+ for(init; test-condition; inc/dec){
+  //code 
+ }
+
+
+ <html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        for (var i = 0; ; i++)
+            console.log(i);
+
+    </script>
+</body>
+
+</html>
+
+
+Jump Statements: 
+
+continue, break , return
+
+
+continue: 
+
+ for (var i = 0; i < 10; i++) {
+            if (i == 3) {
+                continue;
+            }
+            console.log(i);
+
+        }
+
+problem statement:
+
+
+var arr= [10,20,30,10,20,10,20,90,100,30,40,40,50,60,60,50,40];
+
+
+remove the duplicate values from the array. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var arr = [10, 20, 30, 10, 20, 10, 20, 90, 100, 30, 40, 40, 50, 60, 60, 50, 40];
+        var tempArr = [];
+        for (var index = 0; index < arr.length; index++) {
+
+            if (tempArr.includes(arr[index])) {
+                continue;
+            }
+            tempArr.push(arr[index]);
+        }
+        arr = tempArr;
+        console.log(arr);
+        tempArr = null;
+    </script>
+</body>
+
+</html>
+
+break: To terminate a block of code / loop, we use break. 
+
+ex: switch case.
+
+return: can be used to terminate a function. 
+
+
+ function f1() {
+            if (10 == 10) {
+                var choice = 0;
+                switch (choice) {
+                    case 0: console.log("zero"); break;
+                    case 1: console.log("one"); break;
+                }
+                console.log("inside if, after switch")
+            }
+            console.log("hello?");
+            console.log("how are you?")
+        }
+        f1();
+
+
+
+

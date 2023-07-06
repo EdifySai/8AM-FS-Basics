@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var users = [];
+        var index = 0;
+        do {
+            if (users.length == 0) {
+                users = getDataFromDatabase();
+            }
+            else {
+                console.log(users[index].userId + "\t" + users[index].name);
+                index++;
+            }
+        } while (index < users.length)
+
+        function getDataFromDatabase() {
+
+            return [
+                {
+                    userId: 101,
+                    name: "kiran"
+                },
+                {
+                    userId: 102,
+                    name: "rajesh"
+                },
+                {
+                    userId: 103,
+                    name: "ankit"
+                }
+            ]
+
+        }
+
+    </script>
+
+</body>
+
+</html>
