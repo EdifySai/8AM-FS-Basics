@@ -1,0 +1,93 @@
+Functions:
+
+A function is a block of code which takes an input(optional), process it and provides some response. 
+
+syntax: 
+
+ function function_name(parameters){
+  // code 
+ }
+
+function_name(arguments);
+
+
+function login(username, password) {
+            if (username == "kiran" && password == "kiran") {
+                console.log("login success");
+            }
+            else {
+                console.log("login failure");
+            }
+        }
+
+        login("kiran", "kiran");
+
+
+We can represent a function in 4 ways. 
+
+1. function with arguments and with return type 
+2. function without arguments and with return type. 
+3. function with arguments and without return type. 
+3. function without arguments and without return type. 
+
+
+Anonymous Functions:
+
+A function without a name is known as anonymous function. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function f1(a) {
+            // console.log(a);
+            a();
+        }
+        f1(function () {
+            console.log("anonymous function called");
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+example:
+
+<html>
+
+<head>
+
+</head>
+<body>
+    <script>
+        var arr = [10, 20, 30, 40, 50, 60, 70, 80];
+        // arr.forEach(function (value) {
+        //     console.log(value);
+        // });
+        function customForEach(callbackFn) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] < 40) {
+                    callbackFn(arr[i]);
+                }
+            }
+        }
+        customForEach(function (x) {
+            console.log(x);
+        })
+    </script>
+</body>
+
+</html>
+
+
+Function Expressions:
+
+If an anonymous function is referred with a variable, then it is known as function expression. 
+
+

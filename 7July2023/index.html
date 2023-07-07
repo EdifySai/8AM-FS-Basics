@@ -1,0 +1,28 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function f1(a) {
+            a();
+        }
+        function f2(b) {
+            b();
+        }
+        function f3(c) {
+            c();
+        }
+        var callback = function () { // function expression
+            console.log("This is my call back fn");
+        }
+        var a = 100;
+        f1(callback);
+        f2(callback);
+        f3(callback);
+        callback = null;
+    </script>
+</body>
+
+</html>
