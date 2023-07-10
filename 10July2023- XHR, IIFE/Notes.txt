@@ -1,0 +1,88 @@
+First class functions:
+
+If any programming language treats the functions as first class citizens, then we consider the language 
+providing first class functions. 
+
+If a function that can be passed as an argument, can be stored in a variable , can be returned from another 
+function is known as first class function. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function f1() {
+            return function () {
+                console.log("I am returned function");
+            }
+        }
+        f1()();
+    </script>
+
+</body>
+
+</html>
+
+IIFE’s:
+
+Immediately Invoked Function Expression:
+
+IIFEs are used to invoke the functions automatically. These functions will be invoked only once through 
+out the application. 
+
+syntax: 
+
+           (function(){
+               console.log("IIFE  called");
+           })();
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        (function () {
+            console.log("IIFE  called");
+        })();
+    </script>
+</body>
+
+</html>
+
+
+Web Services: 
+
+Movie (4) -> PVR -> Screen 2  -> 10 30 AM (8)
+
+BookMyShow -  p1-  8 tickets - 4 tickets
+PayTM - p2 - 4 tickets - 3tickets
+JustTickets  - 1 ticket
+PVR Cinemas  - 1 ticket
+
+
+PVR Cinema's :  Sell data
+
+
+Backend App : Data Provider (Web Service Providers -> Java, .Net, Python)
+
+FrontEnd App: BMS, JS... ( Web Service Consumers -> JS, React, Angular)
+
+
+Problem Statement: 
+
+Make an API call to fakestore API and get the data from it and show it on the UI.
+
+
+
+
+
+
+
+
+
