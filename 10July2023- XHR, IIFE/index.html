@@ -8,20 +8,14 @@
     <script>
 
         (function () {
-
             var httpRequest = new XMLHttpRequest();
-
             httpRequest.open('get', "https://fakestoreapi.com/products");
-
             httpRequest.send();
-
             httpRequest.onreadystatechange = function () {
-
                 if (httpRequest.readyState == 4) {
                     console.log(httpRequest.responseText);
                 }
             }
-
         })();
 
     </script>

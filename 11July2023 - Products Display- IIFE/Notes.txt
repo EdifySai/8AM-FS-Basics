@@ -1,0 +1,51 @@
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <table border="1" width="100%">
+        <thead>
+            <th>S.No</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <h1 id="msg"></h1>
+    <script>
+        (function () {
+            document.getElementById("msg").innerHTML = "Data Loading.. please wait";
+            var tbody = document.getElementById("tbody");
+            var httpRequest = new XMLHttpRequest();
+            httpRequest.open('get', "https://fakestoreapi.com/products");
+            httpRequest.onreadystatechange = function () {
+                if (httpRequest.readyState == 4) {
+                    var products = JSON.parse(httpRequest.responseText);
+                    // console.log("products", products);
+                    var tablerows = "";
+                    for (var i = 0; i < products.length; i++) {
+                        var product = products[i];
+                        // console.log(product.title + " : " + product.category + ":" + product.price + ":" + product.description);
+                        var trow = "<tr>" + "<td>" + product.id + "</td>" + "<td>" + product.title + "</td>" + "<td>" + product.category + "</td>" + "<td>" + product.price + "</td>" + "<td>" + product.description + "</td>" + "</tr>";
+                        console.log(trow);
+                        tablerows = tablerows + trow;
+                    }
+                    tbody.innerHTML = tablerows;
+                    document.getElementById("msg").innerHTML = "";
+                }
+            }
+            httpRequest.send();
+        })();
+    </script>
+</body>
+</html>
+<!--https://jsonplaceholder.typicode.com/posts -->
+
+
+
