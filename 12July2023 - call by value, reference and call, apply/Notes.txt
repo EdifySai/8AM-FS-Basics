@@ -1,0 +1,63 @@
+Call, Apply and Bind:
+
+call and apply:
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+        var employee = {
+            id: 101,
+            name: "kiran",
+            address: "hyderabad",
+            getDetails: function (state, country) {
+                return this.id + " " + this.name + " " + this.address + " " + state + " " + country;
+            }
+        }
+        //console.log(employee.getDetails());
+        var employee2 = {
+            id: 102,
+            name: "rajesh",
+            address: "chennai"
+        }
+        var arr = ["ts", "india"];
+        console.log(employee.getDetails.call(employee, arr[0], arr[1]));
+        console.log(employee.getDetails.apply(employee2, arr));
+    </script>
+</body>
+
+</html>
+
+
+Call by Value and Call by Reference:
+
+
+CBV: In CBV, the value will be passed instead of address.
+var x = 100;
+        function f1(a) {
+            console.log(a); // 100
+            a = 200;
+        }
+        f1(x); // 100
+        console.log(x); // 100
+
+CBV is applicable for primitive types.
+
+
+CBR: In CBR, the address / reference is passed.
+
+  var arr = [10, 20, 30];
+        
+        function f1(x) {
+            x.push(40);
+            x.push(50);
+        }
+        f1(arr); // address of arr is passed
+        console.log(arr); // 
+
+CBR is applicable for non primitive types such as objects and arrays. 
+
