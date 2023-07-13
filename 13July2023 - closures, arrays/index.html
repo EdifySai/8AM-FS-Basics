@@ -1,0 +1,27 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        // difference between foreach, filter, map 
+        var arr = [0, 0, 10, 20, 30, 40, 50, 60, 80];
+        arr.forEach(function (value, index) {
+            console.log("value: ", value, "index:", index);
+        })
+        var newArr = arr.filter(function (value, index) {
+            return value * 2;
+        })
+        console.log("new array", newArr);
+        console.log("actual array", arr);
+        var mapArray = arr.map(function (value, index) {
+            return value * 10;
+        })
+        console.log(mapArray);
+    </script>
+
+</body>
+
+</html>

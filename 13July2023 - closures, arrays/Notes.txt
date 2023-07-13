@@ -1,0 +1,62 @@
+Closures:
+
+Closure is a scope that gets formed when a function is created inside another 
+function. 
+
+function f1(){
+
+      function f2(){  // closure scope
+
+      }
+
+}
+
+A function inside another function is known as nested function / inner function.
+
+If we want to create private methods then we can use nested functions. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        function outer() {
+            var a = 100, b = 200;
+            function inner() {
+                console.log(a);
+                console.log(b);
+            }
+            inner();
+            return inner;
+        }
+        var i = outer();
+        i();
+
+    </script>
+
+</body>
+
+</html>
+
+Arrays:
+
+Array methods in detail:
+
+
+
+        var arr = [0, 0, 10, 20, 30, 40, 50, 60, 80];
+        console.log(arr);
+        arr.pop();
+        console.log("pop:", arr);
+        arr.shift();
+        console.log("shift", arr);
+
+        var index = arr.indexOf(40);
+        arr.splice(index, 1);
+        console.log("splice", arr);
+
+
