@@ -1,0 +1,95 @@
+Strings and its methods:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+    </div>
+
+    <script>
+        var str = "    hello     ";
+        str.concat("world"); // helloworld
+        console.log(str);
+        console.log(str.toUpperCase());
+        console.log(str.trim());
+        var url = "https://www.facebook.com";
+        var appname = "facebook";
+        console.log(appname.link(url));
+        document.getElementById("content").innerHTML = str.strike();
+        console.log(str.strike());
+        console.log(str.bold());
+        var username = "ravikumar";
+        for (var i = 0; i < username.length; i++) {
+            console.log(username[i]);
+        }
+    </script>
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+        <ul id="connectionsList">
+
+        </ul>
+
+    </div>
+
+    <script>
+
+        var connections = [
+            {
+                "url": "https://www.linkedin.com/in/sumanth-kumar-17586971/",
+                "name": "Sumanth Kumar",
+                "image": "https://media.licdn.com/dms/image/C5603AQFsYvr8XIJKCQ/profile-displayphoto-shrink_100_100/0/1637662460520?e=1695254400&v=beta&t=6I7ptZgbRqb1SSGT-99apUaOocZZJwQi9iaIFevNUdI"
+            },
+            {
+                "url": "https://www.linkedin.com/in/m-vamsi-krishna-varma-44329981/",
+                "name": "M.Vamsi krishna",
+                "image": "https://media.licdn.com/dms/image/C5603AQEPXUXTb2LtoQ/profile-displayphoto-shrink_100_100/0/1631073843979?e=1695254400&v=beta&t=X2L-bCTcNONJNuxM0Mtu5Tf9YKyCGV-awh4jrUC9uvg"
+            },
+            {
+                "url": "https://www.linkedin.com/in/angad-bansode-851670141/",
+                "name": "Angad Bansode",
+                "image": "https://media.licdn.com/dms/image/D4D03AQEs0h2HmKbG7w/profile-displayphoto-shrink_100_100/0/1683813070513?e=1695254400&v=beta&t=z94xEv_TI3s9HFN2AFYOvUw-hzOBTDUogGUs4Qrl3zc"
+            }
+        ];
+
+        var listItems = "";
+        connections.forEach(function (connection) {
+            listItems = listItems + "<li>" + "<img src=" + connection.image + ">&nbsp;&nbsp;" + connection.name.link(connection.url) + "</li>"
+        })
+        document.getElementById("connectionsList").innerHTML = listItems;
+
+    </script>
+</body>
+
+</html>
+
+
+PS: 
+
+Find the occurance of each character from the string. 
+
+hello world, how are you today? 
+
+h  - 2 
+e -  2
+l - 3 
+
+
