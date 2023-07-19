@@ -1,0 +1,140 @@
+ Objects:
+
+var obj = {
+
+    key : value, 
+    .
+    .
+    .
+}
+
+key should be unqiue and string 
+
+value can be of any datatype and need not to be unique. 
+
+
+function constructor: 
+function constructor is same as general function, however we use 
+function constructors to create a template of an object and create 
+multiple objects from it.
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function Employee(eid, name, project) {
+            this.employeeId = eid;
+            this.ename = name;
+            this.currentProject = project
+        }
+        var employee = new Employee(101, "kiran", "crm");
+        console.log(employee);
+
+        var employee1 = new Employee(102, "raj", "crm");
+        var employee2 = new Employee(103, "nikhil", "crm");
+        var employee3 = new Employee(104, "anil", "crm");
+        var employee4 = new Employee(105, "ramesh", "crm");
+        console.log(employee1, employee2, employee3, employee4);
+    </script>
+
+</body>
+</html>
+
+
+Methods of Objects:
+
+create: To create a new object from the existing object. 
+
+ <script>
+        var bank = {
+            bankName: "ICICI Bank",
+            branch: "Gachibowli"
+        }
+        var customer = Object.create(bank);
+        customer.cid = 101;
+        customer.name = "Kiran"
+        console.log(customer);
+    </script>
+
+
+keys and values:
+
+var bank = {
+            bankName: "ICICI Bank",
+            branch: "Gachibowli"
+        }
+        var keysData = Object.keys(bank);
+        console.log(keysData);
+        var valuesData = Object.values(bank);
+        console.log(valuesData);
+
+
+Freeze: No addition of new keys, no updation of existing keys. 
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var bank = Object.freeze({
+            bankName: "ICICI Bank",
+            branch: "Gachibowli",
+            code: "BSBSCKBSKB"
+        });
+        bank.bankName = "ICICI Lombard";
+        bank.branch = "Mehidipatnam";
+        bank.address = "XYZ BUILDING";
+
+        console.log(bank)
+
+    </script>
+</body>
+
+</html>
+
+seal: no addition of new key value pair but we can modify the existing values.
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var bank = Object.seal({
+            bankName: "ICICI Bank",
+            branch: "Gachibowli",
+            code: "BSBSCKBSKB"
+        });
+        bank.bankName = "ICICI Lombard";
+        bank.branch = "Mehidipatnam";
+        bank.address = "XYZ BUILDING";
+
+        console.log(bank)
+        /*
+
+{
+    "bankName": "ICICI Lombard",
+    "branch": "Mehidipatnam",
+    "code": "BSBSCKBSKB"
+}
+        */
+
+    </script>
+</body>
+</html>
+
+Scopes: There are 2 types of scopes. 
+
+1. Local Scope : Local variables
+2. Global Scope : global variables 
+
+
+
+
+
