@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        function checkEligibility(age) {
+            if (typeof age != "number") {
+                console.log("only numbers are allowed");
+                return;
+            }
+            if (age >= 18) {
+                console.log("eligible to vote")
+            }
+            else {
+                console.log("not eligible to vote")
+            }
+        }
+
+        checkEligibility(true);
+    </script>
+
+</body>
+
+</html>

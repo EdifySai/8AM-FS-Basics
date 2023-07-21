@@ -1,0 +1,95 @@
+Debugging:
+
+It is the process of finding the issues in the code by going line by line 
+in the functionality. 
+
+When a QA raises a bug, then that bug must be resolved. to understand 
+which part of the code is raising a bug, we need to perform debugging.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        function checkEligibility(age) {
+            if (typeof age != "number") {
+                console.log("only numbers are allowed");
+                return;
+            }
+            if (age >= 18) {
+                console.log("eligible to vote")
+            }
+            else {
+                console.log("not eligible to vote")
+            }
+        }
+        checkEligibility(true);
+    </script>
+
+</body>
+
+</html>
+
+Garbage Collection:
+
+It is the process where the unused/ orphan objects are removed from 
+the memory when the threshold limit is reached.
+
+Runtime Engine uses garbage collection (application) to remove the 
+objects from the memory. 
+
+As a developer, we need to focus on nullifying the objects after use. 
+
+example:
+
+var employee= {
+    name:"kiran",
+    address: "hyd"
+}
+
+console.log(employee.name);
+console.log(employee.address);
+employee = null;
+
+
+
+Best coding practices:
+
+1. Always use meaningful names for variables, functions,constants. 
+  
+      var isDownloadingFinished = true; 
+
+      function getUsersBasedOnCountry(){
+
+      }
+
+      function filterDataBasedOnCriteria(criteria){
+
+      }
+
+    function name should always be verb.
+
+2.  use  === instead of  == 
+
+3. follow the naming conventions.
+
+ for variables, use noun.
+ for methods/ functions, use verb 
+ constants -> should be uppercase 
+ follow camelcase for variables, functions.
+
+4. use tools like JSLint which warns us if we don't follow naming conventions.
+
+5. Add necessary comments to the code. Don't write too many comments. 
+
+
+
+
+
+    

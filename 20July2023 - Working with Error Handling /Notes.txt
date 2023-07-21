@@ -1,0 +1,193 @@
+Events:
+
+Any action is considered as an event.
+
+examples: clicking on a button, hovering on the image, entering some 
+text in a text field....
+
+Whenever an event occurs, then there should an event handler that 
+should handle the event, 
+
+In js, functions are considered as event handlers. 
+
+Problem Statement: 
+
+disable copying, pasting functionality on a text field. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <input onpaste="return onPasteHandler()" oncopy="return oncopyHandler() " type="text"
+        placeholder="enter account number">
+
+    <h1 style="color:red" id="msg"></h1>
+
+    <script>
+
+        var msg = document.getElementById("msg");
+
+        function oncopyHandler() {
+            msg.innerHTML = "Copying is Disabled";
+            return false;
+        }
+        function onPasteHandler() {
+            msg.innerHTML = "Pasting is Disabled";
+            return false;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement:
+
+Highlight, dehighlight the image based on the user mouse action. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <img id="image" onmouseover="onmouseoverHandler()" onmouseout="onmouseoutHandler()"
+        src="https://rukminim2.flixcart.com/image/200/200/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70">
+
+    <script>
+
+
+        var image = document.getElementById("image");
+
+        function onmouseoverHandler() {
+            image.style.width = 210;
+            image.style.height = 175;
+        }
+
+        function onmouseoutHandler() {
+            image.style.width = 200;
+            image.style.height = 170;
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+https://www.w3schools.com/jsref/dom_obj_event.asp
+
+Error Handling:
+
+Error handling is not the process of fixing bugs. 
+
+Whenever an error occurs in the application, the application gets terminated abnormally without 
+serving other users.
+
+Error handling is the process of skipping the part of the code that raised an error and continue 
+the rest of the flow.
+
+
+ var a = 100, b = 200;
+        console.log(a); // 100
+        try {
+            console.log(c);
+        }
+        catch (error) {
+            console.log(error);
+        }
+        console.log(a + b);  //  300
+
+
+
+another example:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var user;
+        function getUser() {
+            // API Call
+            // user = {
+            //     name: "kiran",
+            //     address: "hyderabad"
+            // }
+        }
+        getUser();
+        try {
+            console.log(user.name);
+        }
+        catch (error) {
+            console.log("error", error);
+        }
+        var employee = {
+            name: "anil"
+        }
+        console.log(employee.name); // anil
+    </script>
+</body>
+
+</html>
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var user;
+        function getUser() {
+            //API Call
+            // user = {
+            //     name: "kiran",
+            //     address: "hyderabad"
+            // }
+        }
+        getUser();
+        try {
+            console.log("db connection opened");
+            console.log(user.name);
+        }
+        catch (error) {
+            console.log("error", error);
+            throw new Error("Log is not available");
+        }
+        finally {
+            console.log("close db connection");
+        }
+        var employee = {
+            name: "anil"
+        }
+        console.log(employee.name); // anil
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
