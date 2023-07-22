@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <script>
+
+        var form = document.createElement("form");
+        console.log("form", form);
+
+        var username = document.createElement("input");
+
+        username.id = "username";
+        username.type = "text";
+        username.placeholder = "username here";
+        username.size = "40";
+        console.log(username);
+
+        var password = document.createElement("input");
+
+        password.id = "password";
+        password.type = "password";
+        password.placeholder = "password here";
+        password.size = "40";
+        console.log(password);
+
+        var usernameLabel = document.createElement("label");
+        usernameLabel.innerText = "username";
+
+        var passwordLabel = document.createElement("label");
+        passwordLabel.innerText = "password";
+
+        var button = document.createElement("button");
+        button.innerText = "Submit";
+
+        form.appendChild(usernameLabel);
+        form.appendChild(username);
+        form.appendChild(passwordLabel);
+        form.appendChild(password);
+        form.appendChild(button);
+
+        console.log(form);
+        document.body.appendChild(form);
+
+    </script>
+</body>
+
+</html>

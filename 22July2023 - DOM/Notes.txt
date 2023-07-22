@@ -1,0 +1,230 @@
+DOM: 
+
+The Document Object Model is responsible for providing dynamic 
+nature to the web pages. 
+
+Javascript provides different objects, functions to manipulate DOM. 
+
+Methods:
+
+
+1. getElementById: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="enter username">
+    <h1 id="message"></h1>
+    <button onclick="submitForm()">Submit</button>
+
+    <script>
+        function submitForm() {
+            var usernameRef = document.getElementById("username");
+            var messageRef = document.getElementById("message");
+            if (usernameRef.value.length < 5) {
+                messageRef.style.color = "red";
+                messageRef.innerText = "Username should be atleast 5 chars";
+                usernameRef.style.borderColor = "red";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+2. Other methods:
+
+<html>
+
+<head>
+
+    <style>
+        .abc {
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="enter username">
+    <h1>Hello World</h1>
+    <h1>Happy Weekend</h1>
+    <p class="abc">This is some paragraph</p>
+    <p class="abc">This is another paragraph</p>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <button onclick="submitForm()">Submit</button>
+
+    <script>
+        function submitForm() {
+            var usernameRef = document.getElementById("username");
+            console.log(usernameRef);
+            var h1 = document.getElementsByTagName("h1");
+            h1[0].style.color = "red";
+            h1[1].style.color = "blue";
+            var abc = document.getElementsByClassName("abc");
+            console.log(abc);
+            abc[1].innerHTML = "hello";
+            var gender = document.getElementsByName("gender");
+            console.log(gender);
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+querySelector, querySelectorAll 
+
+
+<html>
+
+<head>
+
+    <style>
+        .abc {
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="enter username">
+    <h1>Hello World</h1>
+    <h1>Happy Weekend</h1>
+    <button onclick="submitForm()">Submit</button>
+
+    <script>
+        function submitForm() {
+              document.querySelector("h1");
+            var h1 = document.querySelectorAll("h1");
+            console.log(h1);
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+ex-2:
+
+<html>
+
+<head>
+
+    <style>
+        .abc {
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="text" id="username" placeholder="enter username">
+    <h1 onclick="abc()>Hello World</h1>
+    <h1>Happy Weekend</h1>
+    <button onclick="submitForm()">Submit</button>
+
+    <script>
+        function submitForm() {
+            try {
+                var xyz = document.getElementById("xyz");
+                xyz.style.color = "red";
+            }
+            catch (error) {
+                console.log(error);
+            }
+            var h1 = document.querySelectorAll("h1");
+            console.log(h1);
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+<html>
+
+<head>
+
+    <style>
+        .abc {
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="enter username">
+    <button>Submit</button>
+
+    <script>
+        function submitForm() {
+            console.log(document.getElementById("username").value);
+            btn.removeEventListener("click", submitForm);
+        }
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", submitForm);
+
+    </script>
+
+</body>
+
+</html>
+
+Navigation:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>This is some header!</h1>
+        </div>
+    </div>
+    <script>
+
+        var x = document.body.firstChild.nextSibling.firstChild.nextSibling.firstChild.nextSibling;
+
+        x.style.textAlign = "center";
+        x.style.color = "green";
+
+    </script>
+</body>
+
+</html>
+
+Node: 
+
+Every html element in DOM is considered as node. 
+
+we can create, update, delete, list all nodes using DOM.
+
+
+
+
+
+
