@@ -201,10 +201,11 @@ Navigation:
 
 <body>
     <div>
-        <div>
+        
+    </div>
+    <div>
             <h1>This is some header!</h1>
         </div>
-    </div>
     <script>
 
         var x = document.body.firstChild.nextSibling.firstChild.nextSibling.firstChild.nextSibling;

@@ -1,0 +1,238 @@
+Validations:
+
+Validations can be categorized into 2 types. 
+
+1. Basic Validations:  javascript logic
+2. Advanced Validations: Regular expressions 
+
+
+Problem Statement:
+
+Create the following constraints for the password.
+1. should be atleast 8 chars 
+2. should have 1 uppercase 
+3. should have 1 lower case 
+4. should have 1 digit 
+5. should have a special character 
+
+
+
+<!-- 
+
+    Create the following constraints for the password.
+1. should be atleast 8 chars 
+2. should have 1 uppercase 
+3. should have 1 lower case 
+4. should have 1 digit 
+5. should have a special character 
+
+-->
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="password" placeholder="enter password" onkeyup="validate()">
+    <span id="message" style="color:red"></span>
+    <script>
+        var message = document.getElementById("message");
+        function validate() {
+            var password = document.getElementById("password").value;
+            if (password.length < 8) {
+                message.innerText = "Password should be atleast 8 chars";
+            }
+            else {
+                message.innerText = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+Regular Expressions:
+
+Ref: https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+The regular expressions are used to implement search patterns to validate the data against the constraints.
+
+syntax: 
+
+ var pattern= /<pattern>/<modifier> 
+
+ modifier:
+
+ g: global
+
+    var str = "hello how are you doing, hello hello?";
+        var pattern = /l/g;
+        console.log(str.match(pattern).length);
+
+i: case Insensitive
+
+ var str = "hello how are you doing, HELLO HELLO?";
+        var pattern = /l/gi;
+        console.log(str.match(pattern).length);
+
+task: look out for m modifier 
+
+Brackets:
+
+[abc]:
+
+var str = "bcxhelloa";
+        var pattern = /[abc]x/; // ax or bx or cx
+        console.log(pattern.test(str));
+
+
+[^abc]:
+
+
+        var str = "aacA";
+        var pattern = /[^abc]/;
+        console.log(pattern.test(str));
+
+[a-z]:
+
+ var str = "12345a";
+        var pattern = /[a-z]/;
+        console.log(pattern.test(str));
+
+[^a-z]:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var str = "12345a";
+        var pattern = /[^a-z]/;
+        console.log(pattern.test(str));
+    </script>
+</body>
+
+</html>
+
+Metacharacters:
+
+. (dot): represents placeholder
+
+var str = "xRz";
+        var pattern = /x.z/;
+        console.log(pattern.test(str));
+
+    
+
+using dot as dot:
+
+var str = "@gmail.com";
+        var pattern = /@gmail[.]com/;
+        console.log(pattern.test(str));
+
+\w: Word Character 
+
+
+
+ var str = "1";
+        var pattern = /\w/;
+        console.log(pattern.test(str));
+    </script>
+
+\W: Non word character ( special characters)
+
+ var str = "&";
+        var pattern = /\W/;
+        console.log(pattern.test(str));
+
+/s: white space
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var str = "He llo";
+        var pattern = /\s/;
+        console.log(pattern.test(str));
+    </script>
+</body>
+
+</html>
+
+
+Quantifiers:
+
+n+ : one or more characters occurances
+
+ var str = "1AM1SDCHSCJSVCNSVDCNSVDCSDVNSDVCSVa";
+        var pattern = /[0-9][A-Z]+[a-z]/;
+        console.log(pattern.test(str));
+
+n*: zero or more occurances
+
+ var str = "1ABCa";
+        var pattern = /[0-9][A-Z]*[a-z]/;
+        console.log(pattern.test(str));
+
+n? : zero or one  occurances
+
+ var str = "1a";
+        var pattern = /[0-9][A-Z]?[a-z]/;
+        console.log(pattern.test(str));
+
+
+{n}:
+
+ var str = "1ABC1";
+        var pattern = /[0-9][A-Z]{3}[0-9]/;
+        console.log(pattern.test(str));
+
+
+{x,y}:
+
+ var str = "1ABAAA1";
+        var pattern = /[0-9][A-Z]{2,4}[0-9]/;
+        console.log(pattern.test(str));
+
+
+{x,}:
+
+var str = "1AA1";
+        var pattern = /[0-9][A-Z]{2,}[0-9]/;
+        console.log(pattern.test(str));
+
+
+^ , $:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var str = "1AA1";
+        var pattern = /^[0-9][A-Z]{2,}[0-9]$/;
+        console.log(pattern.test(str));
+    </script>
+</body>
+
+</html>
+
+ Create the following constraints for the password.
+1. should be atleast 8 chars - Quantifiers - {8,}
+2. should have 1 uppercase -Quantifiers and brackets- [A-Z]+
+3. should have 1 lower case - -Quantifiers and brackets- [a-z]+
+4. should have 1 digit  - Quantifiers and brackets- [0-9]+
+5. should have a special character - Quantifiers and Metacharacters- \W+
