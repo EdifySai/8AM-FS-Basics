@@ -1,0 +1,27 @@
+Web Storage:
+
+Every browser provides web storage to store the data at the browser level.
+
+In Web Storage, we have local storage and session storage.
+
+
+Local Storage:
+
+The Local Storage is a predefined global object which can be used to store the data in key-value pair in 
+the browser. 
+Most web sites use local storage to store the temporary data which is insensitive.
+Local Storage follows key-value pair format to store the data.
+
+Local Storage stores the data permanently until we remove it from the browser.
+
+important functions: 
+
+setItem(key,value):   key and values are always strings, adds an entry(item) into the local storage.
+
+getItem(key):  used to get the value of an item based on the key.
+
+
+
+
+
+
