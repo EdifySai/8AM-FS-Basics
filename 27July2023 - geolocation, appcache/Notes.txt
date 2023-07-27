@@ -1,0 +1,37 @@
+Session Storage:  Session Storage is similar to local Storage with the following differences. 
+
+1. local Storage data is permanent which means until and unless we remove the data manually, the data 
+will not be removed , where as , In Session Storage, as soon as we close the tab / browser the 
+session data will be Vanished.
+
+2. Session Storage is used when we want to store some information that is not useful for the next time 
+access of the application where as local Storage is used when we want to use some information even after 
+closing of the browser. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        localStorage.setItem("name", "ram");
+        localStorage.setItem("address", "hyderabad");
+        sessionStorage.setItem('token', "dcb bdfkbdfkjbkjdfbkbdfk");
+
+    </script>
+
+</body>
+
+</html>
+
+
+GeoLocation:
+
+
+
+
