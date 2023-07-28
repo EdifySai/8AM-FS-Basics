@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+    <style>
+        #box1,
+        #box2,
+        #box3 {
+            width: 350px;
+            height: 170px;
+            padding: 10px;
+            /* border: 1px solid #aaaaaa; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div ondrop="drop(event)" ondragover="allowdrop(event)" id="box1"></div> <br><br>
+    <div ondrop="drop(event)" ondragover="allowdrop(event)" id="box2"></div><br><br>
+    <div ondrop="drop(event)" ondragover="allowdrop(event)" id="box3"></div> <br><br>
+
+    <img ondragstart="dragstart(event)" alt="some text" id="image1" src="image1.jpeg" draggable="true">
+
+    <script>
+
+        function dragstart(event) {
+            console.log("drag started");
+            console.log("event", event);
+            console.log("id", event.target.id);
+            console.log("alt", event.target.alt);
+            event.dataTransfer.setData('imageId', event.target.id);
+            console.log("getting id", event.dataTransfer.getData('imageId'));
+        }
+        function drop(event) {
+            console.log("drop method called");
+            console.log("drop id", event.dataTransfer.getData("imageId"));
+            event.target.appendChild(document.getElementById(event.dataTransfer.getData("imageId")));
+        }
+
+        function allowdrop(event) {
+            event.preventDefault();
+        }
+
+    </script>
+
+
+</body>
+
+</html>
