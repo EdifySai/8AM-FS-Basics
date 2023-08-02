@@ -1,0 +1,9 @@
+Bootstrap: 
+
+Bootstrap is a css framework used to design responsive web pages. 
+
+A responsive web page can be rendered on any device without any changes in the 
+code which means, one page can be run on any device. 
+
+Twitter introduced Bootstrap. 
+
