@@ -1,0 +1,712 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 26px;
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            margin: 30px 0 80px;
+        }
+
+        h2 b {
+            color: #ffc000;
+        }
+
+        h2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.2);
+            left: 0;
+            right: 0;
+            bottom: -20px;
+        }
+
+        .carousel {
+            margin: 50px auto;
+            padding: 0 70px;
+        }
+
+        .carousel .item {
+            min-height: 330px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .carousel .item .img-box {
+            height: 160px;
+            width: 100%;
+            position: relative;
+        }
+
+        .carousel .item img {
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+
+        .carousel .item h4 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .carousel .item .btn {
+            color: #333;
+            border-radius: 0;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background: none;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin-top: 5px;
+            line-height: 16px;
+        }
+
+        .carousel .item .btn:hover,
+        .carousel .item .btn:focus {
+            color: #fff;
+            background: #000;
+            border-color: #000;
+            box-shadow: none;
+        }
+
+        .carousel .item .btn i {
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .carousel .thumb-wrapper {
+            text-align: center;
+        }
+
+        .carousel .thumb-content {
+            padding: 15px;
+        }
+
+        .carousel .carousel-control {
+            height: 100px;
+            width: 40px;
+            background: none;
+            margin: auto 0;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel .carousel-control i {
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            margin: -16px 0 0 0;
+            z-index: 5;
+            left: 0;
+            right: 0;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: none;
+            font-weight: bold;
+        }
+
+        .carousel .item-price {
+            font-size: 13px;
+            padding: 2px 0;
+        }
+
+        .carousel .item-price strike {
+            color: #999;
+            margin-right: 5px;
+        }
+
+        .carousel .item-price span {
+            color: #86bd57;
+            font-size: 110%;
+        }
+
+        .carousel .carousel-control.left i {
+            margin-left: -3px;
+        }
+
+        .carousel .carousel-control.left i {
+            margin-right: -3px;
+        }
+
+        .carousel .carousel-indicators {
+            bottom: -50px;
+        }
+
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            width: 10px;
+            height: 10px;
+            margin: 4px;
+            border-radius: 50%;
+            border-color: transparent;
+        }
+
+        .carousel-indicators li {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-indicators li.active {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .star-rating li {
+            padding: 0;
+        }
+
+        .star-rating i {
+            font-size: 14px;
+            color: #ffc000;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">EKart</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">ContactUs</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+        <!-- Indicators -->
+        <!-- <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul> -->
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="Los Angeles" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="Chicago" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="New York" width="1100" height="500">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Trending <b>Events</b></h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Carousel indicators -->
+
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMCBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00354491-dvnsremeyq-portrait.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Samay Raina </h4>
+                                            <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                                            <div class="star-rating">
+
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxMCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00363681-vunmsnlkpq-portrait.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>HANS Marthon</h4>
+                                            <p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+                                            <div class="star-rating">
+
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxMiBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00364497-rklksuqwwh-portrait.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>ANUBHAV Singh Bassi</h4>
+                                            <p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+                                            <div class="star-rating">
+
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyIFNlcA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00364685-dxvyzsrpqm-portrait.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Zakir Khan</h4>
+                                            <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                                            <div class="star-rating">
+
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Sony Play Station</h4>
+                                            <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Macbook Pro</h4>
+                                            <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Bose Speaker</h4>
+                                            <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Samsung Galaxy S8</h4>
+                                            <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Apple iPhone</h4>
+                                            <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Canon DSLR</h4>
+                                            <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Google Pixel</h4>
+                                            <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg"
+                                                class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Apple Watch</h4>
+                                            <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1">OUR TEAM</h5>
+            <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://sunlimetech.com/wp-content/uploads/2021/10/logo-autor260.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.This is basic card with image on top, title, description and
+                                            button.This is basic card with image on top, title, description and button.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgr0G2RleW9WkXMqGcZ1yCeGrWovluGZRDw&usqp=CAU"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.This is basic card with image on top, title, description and
+                                            button.This is basic card with image on top, title, description and button.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUltjuKpwm3Xh6uuoqmU21aSeA7o4Cz8yESQ&usqp=CAU"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.This is basic card with image on top, title, description and
+                                            button.This is basic card with image on top, title, description and button.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
