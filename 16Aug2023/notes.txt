@@ -1,0 +1,174 @@
+Multi Background:
+
+
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-image: url("img2.jpeg"), url("images.jpeg"), url("img3.jpeg");
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: top left, top right, top center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+Gradients:
+
+There are 3 types of Gradients.
+
+
+<html>
+
+<head>
+
+    <style>
+        #grad1 {
+            height: 200px;
+            width: 200px;
+            /* background: linear-gradient(red, green, yellow, orange); */
+            /* background: radial-gradient(red, green, yellow, orange) */
+            background: conic-gradient(red, green, yellow, pink, orange);
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="grad1"></div>
+
+</body>
+
+</html>
+
+
+
+Shadow: 
+
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            text-shadow: 2px 2px red;
+        }
+
+        #xyz {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            box-shadow: 12px 12px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <h1>DigitalLync Technologies</h1>
+
+    <div id="xyz">
+
+    </div>
+
+</body>
+
+</html>
+
+2d transform:
+
+property: transform 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(250px,200px);
+}
+</style>
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div>
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+</body>
+</html>
+
+
+3D transform: 
+
+With the CSS transform property you can use the following 3D transformation methods:
+
+rotateX()
+rotateY()
+rotateZ()
+
+Animations:
+
+To define an animation we use @keyframes 
+
+
+<html>
+
+<head>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation-name: changeColors;
+            animation-duration: 10s;
+        }
+
+        @keyframes changeColors {
+            from {
+                background-color: red;
+            
+            }
+            to {
+                background-color: yellow
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
