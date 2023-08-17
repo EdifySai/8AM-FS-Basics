@@ -1,0 +1,118 @@
+multi columns:
+
+<html>
+
+<head>
+
+    <style>
+        div {
+            column-count: 4;
+            column-gap: 30px;
+            column-rule: solid 5px red
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+        going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+        comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+        Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. It is a
+        long established fact that a reader will be distracted by the readable content of a page when looking at its
+        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+        to using 'Content here, content here', making it look like readable English. Many desktop publishing packages
+        and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+        uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+    </div>
+
+</body>
+
+</html>
+
+
+User Interface:
+
+2 new properties
+
+1. outline-offset :
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border: solid 2px red;
+            margin:300px;
+            outline: solid 5px green;
+            padding:20px;
+            outline-offset: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Digital Lync Technologies</h1>
+
+    </div>
+
+</body>
+
+</html>
+
+
+2. resize:
+
+<html>
+
+<head>
+
+    <style>
+        div {
+            border: solid 2px black;
+            margin: 300px;
+            resize: both;
+            overflow: auto
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <textarea></textarea> -->
+    <div>
+        It is a long established fact that a reader will be distracted
+    </div>
+</body>
+
+</html>
+
+
+Layout: 
+
+ The Layout Implementation is a combination of different  CSS properties combined together 
+to match to a specific requirement. 
+
+We need to get a prototype / High Fidelity (HiFi).
+
+CSS Layout examples:
+
+ https://www.w3schools.com/css/css_website_layout.asp
+
+ https://github.com/siddiqueco/blogin-web-template
+
+ 
+
+
+
